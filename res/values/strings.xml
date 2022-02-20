@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SmartBag</string>
+    <string name="logout">logOut</string>
+    <string name="enter_son_id">Enter Son ID</string>
+</resources>

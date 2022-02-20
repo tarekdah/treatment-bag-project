@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:elevation="100dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_weight="9"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_margin="10dp"
+                android:id="@+id/kidnameP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textSize="24dp"
+                android:textColor="#000000"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/kididfather"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Id"
+                android:textSize="18dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/kiddbthP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date Of Birth"
+                android:textSize="18dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/kidinidigP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Achievments"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/kidscoreP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Score"
+                android:textSize="18dp"
+                android:textStyle="bold"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/edit"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="#5A72FA"
+                android:src="@drawable/edit" />
+
+            <ImageView
+                android:id="@+id/deleteim"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="#E91E63"
+                android:src="@drawable/delete" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

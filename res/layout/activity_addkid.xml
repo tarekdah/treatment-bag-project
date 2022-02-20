@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addkid">
+
+    <TextView
+        android:id="@+id/Addk"
+        android:layout_width="200dp"
+        android:layout_height="36dp"
+        android:text="Add Kid"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.818"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.021" />
+
+    <EditText
+        android:id="@+id/kidnameP"
+        android:layout_width="380dp"
+        android:layout_height="77dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Enter The kid Name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.12" />
+
+    <EditText
+        android:id="@+id/kididfather"
+        android:layout_width="380dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Enter The kid ID"
+        android:inputType="textPersonName|numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kidnameP" />
+
+    <EditText
+        android:id="@+id/kidbirth"
+        android:layout_width="380dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Select  The kid BirthDate"
+        android:focusable="false"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kididfather" />
+
+    <EditText
+        android:id="@+id/kiddig"
+        android:layout_width="380dp"
+        android:layout_height="77dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Enter The kid Achievements"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kidbirth"
+        app:layout_constraintVertical_bias="0.031" />
+
+    <Button
+        android:id="@+id/kidaddbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="184dp"
+        android:hint="ADD"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.449"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/kidscoreP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter The kid Score"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/kidaddbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.079"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kiddig"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
