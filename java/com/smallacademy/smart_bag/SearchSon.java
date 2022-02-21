@@ -96,16 +96,22 @@ public class SearchSon extends AppCompatActivity {
                                 DocumentSnapshot document = task.getResult();
                                 if (document.exists())
                                 {
+                                    String to_check;
                                     boolean flag=false;
                                     String[] Ids = document.getData().get("SonID").toString().split("\\s*,\\s*");
                                     int i=0;
                                     for(String id:Ids){
                                         if(i==0){
-
-                                                if (id.substring(1).equals(username)) {
+                                            if(Ids.length==1) {
+                                                 to_check = id.substring(1).substring(0, id.length() - 2);
+                                            } else
+                                                to_check=id.substring(1);
+                                                if (to_check.equals(username)) {
                                                     flag = true;
                                                     break;
                                                 }
+
+
 
                                         }
                                         else

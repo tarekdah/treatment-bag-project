@@ -41,6 +41,11 @@ public class AddFatherKid extends Activity {
     FirebaseFirestore db=FirebaseFirestore.getInstance();
     final String KEY_ID = "SonID";
     String Id_to_update;
+    String fullname;
+    String phonenumber;
+    String email;
+    String isUser;
+
     DatabaseReference reference;
 
     @Override
@@ -63,6 +68,11 @@ public class AddFatherKid extends Activity {
             String first = Id_to_update.substring(0, Id_to_update.length() - 1);
             String to_insert = first + "," + new_id + "]";
             newidmap.put(KEY_ID, to_insert);
+            newidmap.put("FullName",fullname);
+            newidmap.put("PhoneNumber",phonenumber);
+            newidmap.put("UserEmail",email);
+            newidmap.put("isUser",isUser);
+
             noteRef.set(newidmap)
                     .addOnSuccessListener(new OnSuccessListener<Void>() {
                         @Override
@@ -89,6 +99,11 @@ public class AddFatherKid extends Activity {
                     public void onSuccess(DocumentSnapshot documentSnapshot){
                         if(documentSnapshot.exists()){
                             Id_to_update= documentSnapshot.getString(KEY_ID);
+                             fullname=documentSnapshot.getString("FullName");
+                             phonenumber=documentSnapshot.getString("PhoneNumber");
+                             email=documentSnapshot.getString("UserEmail");
+                             isUser=documentSnapshot.getString("isUser");
+
 
                         }else{
                             Toast.makeText(AddFatherKid.this,"Document does not exist",Toast.LENGTH_SHORT).show();
